@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <title>Titol pagina main.html ...</title>
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <h1>Aquest és el template de tota la pagina, que s'hereda en altres html...</h1>
+    {% include 'navbar.html' %}
+    {% include 'navbar.html' %}
+    {% block content %}
+    {% endblock content %}
+    <p>PEU DE PAGINA!</p>
+</body>
+</html>

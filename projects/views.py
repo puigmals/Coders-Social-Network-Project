@@ -2,8 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def projects(request):
-    return HttpResponse('Aquí es mostraran tots els projectes')
+    return render(request, 'projects/projects.html')
 
 def project(request, pk):
-    return HttpResponse('Aquí es mostrara un projecte: {}'.format(str(pk)))    
+    #return HttpResponse(f'Aquí es mostrarà un projecte: {str(pk)}')    
+    return render(request, 'projects/single-project.html')
 
