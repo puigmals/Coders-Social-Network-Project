@@ -1,6 +1,14 @@
 {% extends 'main.html' %}
 
 {% block content %}
+{{message}}
+
+{% if number < 10 %}
+<p>Pages from 1 to 10</p>
+{% else %}
+<p>Old pages</p>
+{% endif %}
+
 <h1>Projects template</h1>
 <p>Text de pagina de projects...</p>
 {% endblock content %}
